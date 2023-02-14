@@ -2,7 +2,7 @@ import { ModuleWithProviders } from '@angular/core';
 // import {RouterModule} from ‘@angular/core’;
 import { Routes, RouterModule } from '@angular/router'; 
 //module for implementing routing
-
+import { LoginComponent } from './login/login.component';
 import { AppComponent } from './app.component';
 import { EventsComponent } from './events/events.component';
 import { MenuComponent } from './menu/menu.component';
@@ -14,8 +14,9 @@ import { MenuComponent } from './menu/menu.component';
 
 export const router: Routes = [
     { path: '', redirectTo: 'about', pathMatch: 'full' },
-    {path:'menu',component: MenuComponent},
-    {path:'events',component: EventsComponent}
+    { path:'menu',component: MenuComponent},
+    { path:'login',component: LoginComponent},
+    { path:'events',component: EventsComponent}
 ]; 
 
 //RouterModule.forRoot is for creating routes for the entire application
